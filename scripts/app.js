@@ -75,7 +75,7 @@ limitedFound = found.slice(0, 5);
 for(let history of limitedFound){
   historyContent +=
   `
-  <p><span class="time-span">Sep 7 14:43:41 :</span> <a href="${history.charLink}">${history.nick}</a> found <span class="boss-name">Drakon The Devourer</span> on ${history.server}.</p>
+  <p><span class="time-span">${history.date} :</span> <a href="${history.charLink}">${history.nick}</a> found <span class="boss-name">Drakon The Devourer</span> on ${history.server}.</p>
   `
 }
 

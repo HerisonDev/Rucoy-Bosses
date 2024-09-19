@@ -3,6 +3,8 @@ const floatMenu = document.getElementById('float-menu');
 
 const sectionHistory = document.getElementById('sec-history');
 
+let link = document.createElement('a');
+
 let historyContent = "";
 
 menuButton.addEventListener('click', () => {
@@ -51,9 +53,13 @@ function ordenarPorPontos(a, b) {
 
 const rankingTable = document.getElementById('ranking');
 top5.forEach((jogador, index) => {
+
+    link.href = jogador.charLink;
+    link.textContent = jogador.nick;
+    link.style = "text-decoration: none;"
     const row = rankingTable.insertRow();
     row.insertCell().textContent = index + 1;
-    row.insertCell().textContent = jogador.nick;
+    row.insertCell().appendChild(link);
     row.insertCell().textContent = jogador.pontos;
 });
 

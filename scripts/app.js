@@ -59,7 +59,8 @@ top5.forEach((jogador, index) => {
     link.target = "_blank";
     const row = rankingTable.insertRow();
     row.insertCell().textContent = index + 1;
-    row.insertCell().appendChild(link);
+    //row.insertCell().appendChild(link);
+    row.insertCell().textContent = jogador.nick;
     row.insertCell().textContent = jogador.pontos;
 });
 

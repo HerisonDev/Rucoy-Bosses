@@ -79,6 +79,7 @@ a {
 .time-span {
     color: #ffffff;
     font-style: italic;
+    font-weight: 100;
 }
 
 a:visited {

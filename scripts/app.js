@@ -56,6 +56,7 @@ top5.forEach((jogador, index) => {
 
     link.href = jogador.charLink;
     link.textContent = jogador.nick;
+    link.target = "_blank";
     const row = rankingTable.insertRow();
     row.insertCell().textContent = index + 1;
     row.insertCell().appendChild(link);

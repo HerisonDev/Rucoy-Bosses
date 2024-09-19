@@ -1,5 +1,8 @@
 let jogadores = [
     {
+        nick: "Zuniga", charLink: "https://www.rucoyonline.com/characters/Zuniga", pontos: 1
+    },
+    {
         nick: "Soubr", charLink: "https://www.rucoyonline.com/characters/Soubr", pontos: 1
     },
     {

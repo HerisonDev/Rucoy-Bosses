@@ -67,3 +67,14 @@ totalRow.insertCell().textContent = "Total: ";
 totalRow.insertCell().colspan = "1";
 totalRow.insertCell().textContent = `${somaTotal}`;
 
+const historyBoard = document.getElementById('sec-history');
+
+for(let history of found){
+  historyContent +=
+  `
+  <p><span class="time-span">Sep 7 14:43:41 :</span> <a href="${history.charLink}">${history.nick}</a> found <span class="boss-name">Drakon The Devourer</span> on ${history.server}.</p>
+  `
+}
+
+historyBoard.innerHTML += historyContent;
+

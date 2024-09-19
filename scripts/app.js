@@ -5,6 +5,7 @@ const sectionHistory = document.getElementById('sec-history');
 
 
 let historyContent = "";
+let limitedFound = "";
 
 menuButton.addEventListener('click', () => {
   // Toggle a classe 'hidden' para mostrar ou ocultar o menu
@@ -69,7 +70,9 @@ totalRow.insertCell().textContent = `${somaTotal}`;
 
 const historyBoard = document.getElementById('sec-history');
 
-for(let history of found){
+limitedFound = found.slice(0, 5);
+
+for(let history of limitedFound){
   historyContent +=
   `
   <p><span class="time-span">Sep 7 14:43:41 :</span> <a href="${history.charLink}">${history.nick}</a> found <span class="boss-name">Drakon The Devourer</span> on ${history.server}.</p>

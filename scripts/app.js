@@ -55,12 +55,11 @@ const rankingTable = document.getElementById('ranking');
 top5.forEach((jogador, index) => {
 
     link.href = jogador.charLink;
-    link.textContent = jogador.nick;
     link.target = "_blank";
+    link.textContent = jogador.nick;
     const row = rankingTable.insertRow();
     row.insertCell().textContent = index + 1;
-    //row.insertCell().appendChild(link);
-    row.insertCell().textContent = jogador.nick;
+    row.insertCell().appendChild(link);
     row.insertCell().textContent = jogador.pontos;
 });
 

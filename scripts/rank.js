@@ -1,6 +1,6 @@
 let jogadores = [
     {
-      nick: "Hail Ykz", charLink: "jririr", pontos: 2
+        nick: "Hail Ykz", charLink: "jririr", pontos: 2
     }
 ];
 

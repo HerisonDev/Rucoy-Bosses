@@ -76,6 +76,11 @@ a {
     color: #ffffff;
 }
 
+.time-span {
+    color: #ffffff;
+    font-style: italic;
+}
+
 a:visited {
     color: #ffffff;
 }

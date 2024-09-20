@@ -80,7 +80,5 @@ for(let history of limitedFound){
   `
 }
 
-rowTable.insertCell().textContent = "Teste"
-
 historyBoard.innerHTML += historyContent;
 

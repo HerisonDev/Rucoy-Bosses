@@ -3,6 +3,7 @@ const floatMenu = document.getElementById('float-menu');
 
 const sectionHistory = document.getElementById('sec-history');
 
+const rowTable = document.getElementById('row-table');
 
 let historyContent = "";
 let limitedFound = "";
@@ -78,6 +79,8 @@ for(let history of limitedFound){
   <p><span class="time-span">${history.date} :</span> <a href="${history.charLink}">${history.nick}</a> found <span class="boss-name">Drakon The Devourer</span> on ${history.server}.</p>
   `
 }
+
+rowTable.insertCell().textContent = "Teste"
 
 historyBoard.innerHTML += historyContent;
 

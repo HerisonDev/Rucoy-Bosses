@@ -141,4 +141,4 @@ cd $HOME/Rucoy-bosses/
 git add .
 git commit -m "update rank.js and history.js"
 git push origin main
-cd
+. boss-status

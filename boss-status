@@ -1,0 +1,277 @@
+#!/bin/bash
+
+HTML="/root/Rucoy-bosses/index.html"
+
+while true; do
+    clear
+    echo " Por favor, selecione um servidor :"
+    echo ""
+    echo " Please select a server :"
+    echo ""
+
+    echo "América do Norte:"
+    echo " 1) North America 1"
+    echo " 2) North America 2"
+    echo " 3) North America 3"
+    echo " 4) North America 4"
+    echo " 5) North America 5"
+    echo " 6) North America 6"
+    echo ""
+
+    echo "América do Sul:"
+    echo " 7) South America 1"
+    echo " 8) South America 2"
+    echo " 9) South America 3"
+    echo "10) South America 4"
+    echo "11) South America 5"
+    echo "12) South America 6"
+    echo "13) South America 7"
+    echo "14) South America 8"
+    echo ""
+
+    echo "Europa:"
+    echo "15) Europe 1"
+    echo "16) Europe 2"
+    echo "17) Europe 3"
+    echo "18) Europe 4"
+    echo "19) Europe 5"
+    echo "20) Europe 6"
+    echo ""
+
+    echo "Ásia:"
+    echo "21) Asia 1"
+    echo "22) Asia 2"
+    echo "23) Asia 3"
+    echo "24) Asia 4"
+    echo ""
+
+    read -p "Opção: " option
+
+    case $option in
+        1)
+            echo "Você selecionou North America 1"
+
+            # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '64s/Spawned/Boss Not Found/' $HTML
+            sed -i '64s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de North America 1 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        2)
+            echo "Você selecionou North America 2"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '69s/Spawned/Boss Not Found/' $HTML
+            sed -i '69s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de North America 2 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        3)
+            echo "Você selecionou North America 3"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '74s/Spawned/Boss Not Found/' $HTML
+            sed -i '74s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de North America 3 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        4)
+            echo "Você selecionou North America 4"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '78s/Spawned/Boss Not Found/' $HTML
+            sed -i '78s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de North America 4 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        5)
+            echo "Você selecionou North America 5"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '64s/Spawned/Boss Not Found/' $HTML
+            sed -i '64s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de North America 5 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        6)
+            echo "Você selecionou North America 6"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '86s/Spawned/Boss Not Found/' $HTML
+            sed -i '86s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de North America 6 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        7)
+            echo "Você selecionou South America 1"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '93s/Spawned/Boss Not Found/' $HTML
+            sed -i '93s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de South America 1 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        8)
+            echo "Você selecionou South America 2"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '97s/Spawned/Boss Not Found/' $HTML
+            sed -i '97s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de South America 2 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        9)
+            echo "Você selecionou South America 3"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '101s/Spawned/Boss Not Found/' $HTML
+            sed -i '101s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de South America 3 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        10)
+            echo "Você selecionou South America 4"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '105s/Spawned/Boss Not Found/' $HTML
+            sed -i '105s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de South America 4 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        11)
+            echo "Você selecionou South America 5"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '109s/Spawned/Boss Not Found/' $HTML
+            sed -i '109s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de South America 5 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        12)
+            echo "Você selecionou South America 6"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '113s/Spawned/Boss Not Found/' $HTML
+            sed -i '113s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de South America 6 foi alterado para 'Boss Not Found e a cor para red."
+            break;;
+        13)
+            echo "Você selecionou South America 7"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '117s/Spawned/Boss Not Found/' $HTML
+            sed -i '117s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de South America 7 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        14)
+            echo "Você selecionou South America 8"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '121s/Spawned/Boss Not Found/' $HTML
+            sed -i '121s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de South America 8 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        15)
+            echo "Você selecionou Europe 1"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '128s/Spawned/Boss Not Found/' $HTML
+            sed -i '128s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de Europe 1 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        16)
+            echo "Você selecionou Europe 2"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '132s/Spawned/Boss Not Found/' $HTML
+            sed -i '132s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de Europe 2 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        17)
+            echo "Você selecionou Europe 3"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '136s/Spawned/Boss Not Found/' $HTML
+            sed -i '136s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de Europe 3 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        18)
+            echo "Você selecionou Europe 4"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '140s/Spawned/Boss Not Found/' $HTML
+            sed -i '140s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de Europe 4 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        19)
+            echo "Você selecionou Europe 5"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '144s/Spawned/Boss Not Found/' $HTML
+            sed -i '144s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de Europa 5 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        20)
+            echo "Você selecionou Europe 6"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '148s/Spawned/Boss Not Found/' $HTML
+            sed -i '148s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de Europa 6 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        21)
+            echo "Você selecionou Asia 1"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '155s/Spawned/Boss Not Found/' $HTML
+            sed -i '155s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de Asia 1 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        22)
+            echo "Você selecionou Asia 2"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '159s/Spawned/Boss Not Found/' $HTML
+            sed -i '159s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de Asia 2 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        23)
+            echo "Você selecionou Asia 3"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '163s/Spawned/Boss Not Found/' $HTML
+            sed -i '163s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de Asia 3 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        24)
+            echo "Você selecionou Asia 4"
+
+	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
+            sed -i '167s/Spawned/Boss Not Found/' $HTML
+            sed -i '167s/color: rgb(0, 255, 0);/color: red;/' $HTML
+
+            echo "O status de Asia 4 foi alterado para 'Boss Not Found' e a cor para red."
+            break;;
+        *)
+            echo "Opção inválida. Por favor, tente novamente."
+            ;;
+    esac
+done
+
+cd $HOME/Rucoy-bosses/
+git add .
+git commit -m "update index.html boss status"
+git push origin main
+cd

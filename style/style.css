@@ -98,7 +98,7 @@ a:visited {
     position: fixed;
     left: 0;
     background-color: #AAAAAA;
-    width: 60%;
+    width: 30%;
     height: 100vh;
 }
 
@@ -309,8 +309,9 @@ table td {
         align-items: center;
         width: 80%;
         height: 5vh;
-
-
+    }
+    .float-menu {
+        width: 60%;
     }
 
 }

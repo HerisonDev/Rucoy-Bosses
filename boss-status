@@ -52,6 +52,8 @@ while true; do
     echo "23) Asia 3 $STATUS"
     echo "24) Asia 4 $STATUS"
     echo ""
+    echo "25) Adicionar novo boss"
+    echo ""
 
     read -p "Opção: " option
 
@@ -279,6 +281,10 @@ while true; do
 
             echo "O status de Asia 4 foi alterado para 'Boss Not Found' e a cor para red."
             break;;
+	25)
+	    cd $HOME/Rucoy-bosses/
+	    . rank
+	    break;;
         *)
             echo "Opção inválida. Por favor, tente novamente."
             ;;

@@ -25,39 +25,231 @@ while true; do
 
     echo "América do Norte:"
 
-    echo " 1) North America 1 $STATUS"
-    echo " 2) North America 2 $STATUS"
-    echo " 3) North America 3 $STATUS"
-    echo " 4) North America 4 $STATUS"
-    echo " 5) North America 5 $STATUS"
-    echo " 6) North America 6 $STATUS"
+    echo " 1) North America 1 '$(
+    if [[ $(sed '64q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '64q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '64q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo " 2) North America 2 '$(
+    if [[ $(sed '69q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '69q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '69q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo " 3) North America 3 '$(
+    if [[ $(sed '74q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '74q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '74q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo " 4) North America 4 '$(
+    if [[ $(sed '78q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '78q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '78q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo " 5) North America 5 '$(
+    if [[ $(sed '82q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '82q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '82q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo " 6) North America 6 '$(
+    if [[ $(sed '86q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '86q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '86q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
     echo ""
 
     echo "América do Sul:"
-    echo " 7) South America 1 $STATUS"
-    echo " 8) South America 2 $STATUS"
-    echo " 9) South America 3 $STATUS"
-    echo "10) South America 4 $STATUS"
-    echo "11) South America 5 $STATUS"
-    echo "12) South America 6 $STATUS"
-    echo "13) South America 7 $STATUS"
-    echo "14) South America 8 $STATUS"
+    echo " 7) South America 1 '$(
+    if [[ $(sed '93q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '93q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '93q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo " 8) South America 2 '$(
+    if [[ $(sed '97q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '97q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '97q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo " 9) South America 3 '$(
+    if [[ $(sed '101q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '101q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '101q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo "10) South America 4 '$(
+    if [[ $(sed '105q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '105q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '105q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo "11) South America 5 '$(
+    if [[ $(sed '109q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '109q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '109q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo "12) South America 6 '$(
+    if [[ $(sed '113q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '113q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '113q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo "13) South America 7 '$(
+    if [[ $(sed '117q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '117q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '117q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo "14) South America 8 '$(
+    if [[ $(sed '121q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '121q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '121q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
     echo ""
 
     echo "Europa:"
-    echo "15) Europe 1 $STATUS"
-    echo "16) Europe 2 $STATUS"
-    echo "17) Europe 3 $STATUS"
-    echo "18) Europe 4 $STATUS"
-    echo "19) Europe 5 $STATUS"
-    echo "20) Europe 6 $STATUS"
+    echo "15) Europe 1 '$(
+    if [[ $(sed '128q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '128q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '128q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo "16) Europe 2 '$(
+    if [[ $(sed '132q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '132q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '132q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo "17) Europe 3 '$(
+    if [[ $(sed '136q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '136q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '136q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo "18) Europe 4 '$(
+    if [[ $(sed '140q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '140q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '140q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo "19) Europe 5 '$(
+    if [[ $(sed '144q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '144q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '144q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo "20) Europe 6 '$(
+    if [[ $(sed '148q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '148q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '148q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
     echo ""
 
     echo "Ásia:"
-    echo "21) Asia 1 $STATUS"
-    echo "22) Asia 2 $STATUS"
-    echo "23) Asia 3 $STATUS"
-    echo "24) Asia 4 $STATUS"
+    echo "21) Asia 1 '$(
+    if [[ $(sed '155q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '155q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '155q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo "22) Asia 2 '$(
+    if [[ $(sed '159q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '159q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '159q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo "23) Asia 3 '$(
+    if [[ $(sed '163q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '163q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '163q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
+    echo "24) Asia 4 '$(
+    if [[ $(sed '167q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '167q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '167q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)'"
     echo ""
     echo "25) Adicionar novo boss"
     echo ""

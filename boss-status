@@ -16,6 +16,7 @@ function att-repo(){
     git add .
     git commit -m "update index.html boss status"
     git push origin main
+    . boss-status
 }
 
 while true; do
@@ -281,6 +282,7 @@ while true; do
             sed -i '69s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de North America 2 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         3)
             echo "Você selecionou North America 3"
@@ -290,6 +292,7 @@ while true; do
             sed -i '74s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de North America 3 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         4)
             echo "Você selecionou North America 4"
@@ -299,6 +302,7 @@ while true; do
             sed -i '78s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de North America 4 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         5)
             echo "Você selecionou North America 5"
@@ -308,6 +312,7 @@ while true; do
             sed -i '64s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de North America 5 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         6)
             echo "Você selecionou North America 6"
@@ -317,6 +322,7 @@ while true; do
             sed -i '86s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de North America 6 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         7)
             echo "Você selecionou South America 1"
@@ -326,6 +332,7 @@ while true; do
             sed -i '93s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de South America 1 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         8)
             echo "Você selecionou South America 2"
@@ -335,6 +342,7 @@ while true; do
             sed -i '97s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de South America 2 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         9)
             echo "Você selecionou South America 3"
@@ -344,6 +352,7 @@ while true; do
             sed -i '101s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de South America 3 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         10)
             echo "Você selecionou South America 4"
@@ -353,6 +362,7 @@ while true; do
             sed -i '105s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de South America 4 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         11)
             echo "Você selecionou South America 5"
@@ -362,6 +372,7 @@ while true; do
             sed -i '109s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de South America 5 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         12)
             echo "Você selecionou South America 6"
@@ -371,6 +382,7 @@ while true; do
             sed -i '113s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de South America 6 foi alterado para 'Boss Not Found e a cor para red."
+	    att-repo
             break;;
         13)
             echo "Você selecionou South America 7"
@@ -380,6 +392,7 @@ while true; do
             sed -i '117s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de South America 7 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         14)
             echo "Você selecionou South America 8"
@@ -389,6 +402,7 @@ while true; do
             sed -i '121s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de South America 8 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         15)
             echo "Você selecionou Europe 1"
@@ -398,6 +412,7 @@ while true; do
             sed -i '128s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de Europe 1 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         16)
             echo "Você selecionou Europe 2"
@@ -407,6 +422,7 @@ while true; do
             sed -i '132s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de Europe 2 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         17)
             echo "Você selecionou Europe 3"
@@ -416,6 +432,7 @@ while true; do
             sed -i '136s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de Europe 3 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         18)
             echo "Você selecionou Europe 4"
@@ -425,6 +442,7 @@ while true; do
             sed -i '140s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de Europe 4 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         19)
             echo "Você selecionou Europe 5"
@@ -434,6 +452,7 @@ while true; do
             sed -i '144s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de Europa 5 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         20)
             echo "Você selecionou Europe 6"
@@ -443,6 +462,7 @@ while true; do
             sed -i '148s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de Europa 6 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         21)
             echo "Você selecionou Asia 1"
@@ -452,6 +472,7 @@ while true; do
             sed -i '155s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de Asia 1 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         22)
             echo "Você selecionou Asia 2"
@@ -461,6 +482,7 @@ while true; do
             sed -i '159s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de Asia 2 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         23)
             echo "Você selecionou Asia 3"
@@ -470,6 +492,7 @@ while true; do
             sed -i '163s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de Asia 3 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
         24)
             echo "Você selecionou Asia 4"
@@ -479,6 +502,7 @@ while true; do
             sed -i '167s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de Asia 4 foi alterado para 'Boss Not Found' e a cor para red."
+	    att-repo
             break;;
 	25)
 	    cd $HOME/Rucoy-bosses/

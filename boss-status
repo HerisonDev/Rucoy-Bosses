@@ -11,6 +11,13 @@ STATUS="$(
     fi
 )"
 
+function att-repo(){
+    cd $HOME/Rucoy-bosses/
+    git add .
+    git commit -m "update index.html boss status"
+    git push origin main
+}
+
 while true; do
     clear
     echo " Por favor, selecione um servidor :"
@@ -69,10 +76,10 @@ while true; do
             elif [[ "$(sed '64q;d' $HTML)" =~ "Boss Dead" ]]; then
             sed -i '64s/Boss Dead/Boss Not Found/' $HTML
             sed -i '64s/color: orange;/color: red;/' $HTML
-
             fi
 
             echo "O status de North America 1 foi alterado"
+	    att-repo
             break;;
         2)
             echo "Você selecionou North America 2"
@@ -290,8 +297,3 @@ while true; do
             ;;
     esac
 done
-
-cd $HOME/Rucoy-bosses/
-git add .
-git commit -m "update index.html boss status"
-git push origin main

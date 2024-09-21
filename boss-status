@@ -1,48 +1,56 @@
 #!/bin/bash
 
 HTML="/root/Rucoy-bosses/index.html"
+STATUS="$(
+    if [[ $(sed '64q;d' "$HTML") == *"Spawned"* ]]; then
+        echo -e '\033[0;32mSpawned\033[0m'
+    elif [[ $(sed '64q;d' "$HTML") == *"Boss Dead"* ]]; then
+        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '64q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
+    fi
+)"
 
 while true; do
     clear
     echo " Por favor, selecione um servidor :"
     echo ""
-    echo " Please select a server :"
-    echo ""
 
     echo "América do Norte:"
-    echo " 1) North America 1"
-    echo " 2) North America 2"
-    echo " 3) North America 3"
-    echo " 4) North America 4"
-    echo " 5) North America 5"
-    echo " 6) North America 6"
+
+    echo " 1) North America 1 $STATUS"
+    echo " 2) North America 2 $STATUS"
+    echo " 3) North America 3 $STATUS"
+    echo " 4) North America 4 $STATUS"
+    echo " 5) North America 5 $STATUS"
+    echo " 6) North America 6 $STATUS"
     echo ""
 
     echo "América do Sul:"
-    echo " 7) South America 1"
-    echo " 8) South America 2"
-    echo " 9) South America 3"
-    echo "10) South America 4"
-    echo "11) South America 5"
-    echo "12) South America 6"
-    echo "13) South America 7"
-    echo "14) South America 8"
+    echo " 7) South America 1 $STATUS"
+    echo " 8) South America 2 $STATUS"
+    echo " 9) South America 3 $STATUS"
+    echo "10) South America 4 $STATUS"
+    echo "11) South America 5 $STATUS"
+    echo "12) South America 6 $STATUS"
+    echo "13) South America 7 $STATUS"
+    echo "14) South America 8 $STATUS"
     echo ""
 
     echo "Europa:"
-    echo "15) Europe 1"
-    echo "16) Europe 2"
-    echo "17) Europe 3"
-    echo "18) Europe 4"
-    echo "19) Europe 5"
-    echo "20) Europe 6"
+    echo "15) Europe 1 $STATUS"
+    echo "16) Europe 2 $STATUS"
+    echo "17) Europe 3 $STATUS"
+    echo "18) Europe 4 $STATUS"
+    echo "19) Europe 5 $STATUS"
+    echo "20) Europe 6 $STATUS"
     echo ""
 
     echo "Ásia:"
-    echo "21) Asia 1"
-    echo "22) Asia 2"
-    echo "23) Asia 3"
-    echo "24) Asia 4"
+    echo "21) Asia 1 $STATUS"
+    echo "22) Asia 2 $STATUS"
+    echo "23) Asia 3 $STATUS"
+    echo "24) Asia 4 $STATUS"
     echo ""
 
     read -p "Opção: " option
@@ -52,10 +60,17 @@ while true; do
             echo "Você selecionou North America 1"
 
             # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
-            sed -i '64s/Spawned/Boss Not Found/' $HTML
-            sed -i '64s/color: rgb(0, 255, 0);/color: red;/' $HTML
+            if [[ "$(sed '64q;d' $HTML)" =~ "Spawned" ]]; then
+            sed -i '64s/Spawned/Boss Dead/' $HTML
+            sed -i '64s/color: rgb(0, 255, 0);/color: orange;/' $HTML
 
-            echo "O status de North America 1 foi alterado para 'Boss Not Found' e a cor para red."
+            elif [[ "$(sed '64q;d' $HTML)" =~ "Boss Dead" ]]; then
+            sed -i '64s/Boss Dead/Boss Not Found/' $HTML
+            sed -i '64s/color: orange;/color: red;/' $HTML
+
+            fi
+
+            echo "O status de North America 1 foi alterado"
             break;;
         2)
             echo "Você selecionou North America 2"

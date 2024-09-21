@@ -1,5 +1,8 @@
 let found = [
     {
+        nick: "Fallen Kanroji", charLink: "https://www.rucoyonline.com/characters/Fallen%20Kanroji", server: "North America 1", date: "21 Sep 02:26:18"
+    },
+    {
         nick: "Bestial Titan", charLink: "https://www.rucoyonline.com/characters/Bestial%20Titan", server: "North America 1", date: "21 Sep 02:23:31"
     },
     {

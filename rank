@@ -1,0 +1,144 @@
+#!/bin/bash
+
+HTML="/root/Rucoy-bosses/index.html"
+
+# Solicita que o usuário digite o nome do jogador
+read -p "Digite o nome do jogador: " nome
+
+# Solicita o servidor
+#read -p "Digite o nome do servidor: " servidor
+
+while true; do
+    clear
+    echo "Por favor, selecione um servidor:"
+    echo ""
+    echo "América do Norte:"
+    echo " 1) North America 1"
+    echo " 2) North America 2"
+    echo " 3) North America 3"
+    echo " 4) North America 4"
+    echo " 5) North America 5"
+    echo " 6) North America 6"
+    echo ""
+    echo "América do Sul:"
+    echo " 7) South America 1"
+    echo " 8) South America 2"
+    echo " 9) South America 3"
+    echo "10) South America 4"
+    echo "11) South America 5"
+    echo "12) South America 6"
+    echo "13) South America 7"
+    echo "14) South America 8"
+    echo ""
+    echo "Europa:"
+    echo "15) Europe 1"
+    echo "16) Europe 2"
+    echo "17) Europe 3"
+    echo "18) Europe 4"
+    echo "19) Europe 5"
+    echo "20) Europe 6"
+    echo ""
+    echo "Ásia:"
+    echo "21) Asia 1"
+    echo "22) Asia 2"
+    echo "23) Asia 3"
+    echo "24) Asia 4"
+    echo ""
+
+    read -p "Opção: " option
+
+    case $option in
+        1) servidor="North America 1"; sed -i '64s/Boss Not Found/Spawned/' $HTML; sed -i '64s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        2) servidor="North America 2"; sed -i '69s/Boss Not Found/Spawned/' $HTML; sed -i '69s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        3) servidor="North America 3"; sed -i '74s/Boss Not Found/Spawned/' $HTML; sed -i '74s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        4) servidor="North America 4"; sed -i '78s/Boss Not Found/Spawned/' $HTML; sed -i '78s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        5) servidor="North America 5"; sed -i '82s/Boss Not Found/Spawned/' $HTML; sed -i '82s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        6) servidor="North America 6"; sed -i '86s/Boss Not Found/Spawned/' $HTML; sed -i '86s/color: red;/color: rgb(0, 255, 0);/' $HTML ; break;;
+        7) servidor="South America 1"; sed -i '93s/Boss Not Found/Spawned/' $HTML; sed -i '93s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        8) servidor="South America 2"; sed -i '97s/Boss Not Found/Spawned/' $HTML; sed -i '97s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        9) servidor="South America 3"; sed -i '101s/Boss Not Found/Spawned/' $HTML; sed -i '101s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        10) servidor="South America 4"; sed -i '105s/Boss Not Found/Spawned/' $HTML; sed -i '105s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        11) servidor="South America 5"; sed -i '109s/Boss Not Found/Spawned/' $HTML; sed -i '109s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        12) servidor="South America 6"; sed -i '113s/Boss Not Found/Spawned/' $HTML; sed -i '113s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        13) servidor="South America 7"; sed -i '117s/Boss Not Found/Spawned/' $HTML; sed -i '117s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        14) servidor="South America 8"; sed -i '121s/Boss Not Found/Spawned/' $HTML; sed -i '121s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        15) servidor="Europe 1"; sed -i '128s/Boss Not Found/Spawned/' $HTML; sed -i '128s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        16) servidor="Europe 2"; sed -i '132s/Boss Not Found/Spawned/' $HTML; sed -i '132s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        17) servidor="Europe 3"; sed -i '136s/Boss Not Found/Spawned/' $HTML; sed -i '136s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        18) servidor="Europe 4"; sed -i '140s/Boss Not Found/Spawned/' $HTML; sed -i '140s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        19) servidor="Europe 5"; sed -i '144s/Boss Not Found/Spawned/' $HTML; sed -i '144s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        20) servidor="Europe 6"; sed -i '148s/Boss Not Found/Spawned/' $HTML; sed -i '148s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        21) servidor="Asia 1"; sed -i '155s/Boss Not Found/Spawned/' $HTML; sed -i '155s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        22) servidor="Asia 2"; sed -i '159s/Boss Not Found/Spawned/' $HTML; sed -i '159s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        23) servidor="Asia 3"; sed -i '163s/Boss Not Found/Spawned/' $HTML; sed -i '163s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        24) servidor="Asia 4"; sed -i '167s/Boss Not Found/Spawned/' $HTML; sed -i '167s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+        *) echo "Opção inválida. Por favor, tente novamente."; continue;;
+    esac
+done
+
+
+# Variável para o arquivo rank.js
+RANK_FILE="$HOME/Rucoy-bosses/scripts/rank.js"
+
+# Variável para o arquivo history.js
+HISTORY_FILE="$HOME/Rucoy-bosses/scripts/history.js"
+
+# Captura a data e hora atuais no formato desejado
+data_atual=$(date +"%d %b %H:%M:%S")
+
+# Verifica se o nome do jogador já está presente no arquivo rank.js
+if grep -q "nick: \"$nome\"" "$RANK_FILE"; then
+    # Extrai a linha completa que contém o nick do jogador
+    linha_completa=$(grep "nick: \"$nome\"" "$RANK_FILE")
+
+    # Extrai a pontuação atual do jogador
+    pontuacao_atual=$(echo "$linha_completa" | grep -oP "(?<=pontos: )\d+")
+
+    # Verifica se a pontuação foi encontrada
+    if [ -n "$pontuacao_atual" ]; then
+        nova_pontuacao=$((pontuacao_atual + 1))
+
+        # Atualiza a pontuação no arquivo rank.js usando sed
+        sed -i "s/nick: \"$nome\", charLink: \"https:\/\/www\.rucoyonline\.com\/characters\/.*\", pontos: $pontuacao_atual/nick: \"$nome\", charLink: \"https:\/\/www.rucoyonline.com\/characters\/$(echo "$nome" | sed 's/ /%20/g')\", pontos: $nova_pontuacao/" "$RANK_FILE"
+
+        echo "Pontuação atualizada para $nome: $nova_pontuacao"
+    else
+        echo "Pontuação não encontrada para $nome"
+    fi
+else
+    # Função para adicionar um novo jogador no rank.js
+    function adicionar_jogador_rank() {
+        local nome="$1"
+        local link="https://www.rucoyonline.com/characters/"$(echo "$nome" | sed 's/ /%20/g')
+
+        # Adiciona o novo jogador no início da lista no rank.js
+        sed -i '2i\    {\n        nick: "'"$nome"'", charLink: "'"$link"'", pontos: 1\n    },' "$RANK_FILE"
+    }
+
+    # Chama a função para adicionar o jogador no rank.js
+    adicionar_jogador_rank "$nome"
+
+    echo "Novo jogador '$nome' adicionado com 1 ponto."
+fi
+
+# Função para adicionar o jogador no history.js, independentemente de já existir
+function adicionar_history() {
+    local nome="$1"
+    local servidor="$2"
+    local data="$3"
+    local link="https://www.rucoyonline.com/characters/"$(echo "$nome" | sed 's/ /%20/g')
+
+    # Adiciona sempre um novo registro no history.js, mesmo que o jogador já exista
+    sed -i '2i\    {\n        nick: "'"$nome"'", charLink: "'"$link"'", server: "'"$servidor"'", date: "'"$data"'"\n    },' "$HISTORY_FILE"
+    echo "Novo registro para '$nome' adicionado no history.js."
+}
+
+# Chama a função para sempre adicionar um novo registro no history.js
+adicionar_history "$nome" "$servidor" "$data_atual"
+
+# Commit das mudanças no Git
+cd $HOME/Rucoy-bosses/
+git add .
+git commit -m "update rank.js and history.js"
+git push origin main
+cd

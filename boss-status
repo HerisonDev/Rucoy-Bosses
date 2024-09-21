@@ -295,4 +295,3 @@ cd $HOME/Rucoy-bosses/
 git add .
 git commit -m "update index.html boss status"
 git push origin main
-cd

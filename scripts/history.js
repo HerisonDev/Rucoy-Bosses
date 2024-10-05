@@ -1,5 +1,8 @@
 let found = [
     {
+        nick: "Beatriz Cracuda", charLink: "https://www.rucoyonline.com/characters/Beatriz%20Cracuda", server: "Asia 4", date: "05 Oct 18:38:01"
+    },
+    {
         nick: "Bestial Titan", charLink: "https://www.rucoyonline.com/characters/Bestial%20Titan", server: "South America 1", date: "05 Oct 18:35:58"
     },
     {

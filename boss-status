@@ -20,7 +20,7 @@ function att-repo(){
 }
 
 while true; do
-    clear
+#    clear
     echo " Por favor, selecione um servidor :"
     echo ""
 

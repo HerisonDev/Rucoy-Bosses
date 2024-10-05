@@ -107,13 +107,25 @@ if grep -q "nick: \"$nome\"" "$RANK_FILE"; then
     fi
 else
     # Função para adicionar um novo jogador no rank.js
-    function adicionar_jogador_rank() {
-        local nome="$1"
-        local link="https://www.rucoyonline.com/characters/"$(echo "$nome" | sed 's/ /%20/g')
+    # Função para adicionar um novo jogador no rank.js
+function adicionar_jogador_rank() {
+    local nome="$1"
+    local link="https://www.rucoyonline.com/characters/"$(echo "$nome" | sed 's/ /%20/g')
 
-        # Adiciona o novo jogador no início da lista no rank.js
-        sed -i '2i\    {\n        nick: "'"$nome"'", charLink: "'"$link"'", pontos: 1\n    },' "$RANK_FILE"
-    }
+    # Verifica se a lista já contém jogadores
+    if grep -q "nick:" "$RANK_FILE"; then
+        # Remove o fechamento da array "]"
+        sed -i '$d' "$RANK_FILE"
+        
+        # Adiciona o novo jogador no final da lista com uma vírgula, seguido pelo fechamento da array
+        echo "    { nick: \"$nome\", charLink: \"$link\", pontos: 1 }," >> "$RANK_FILE"
+        echo "]" >> "$RANK_FILE"
+    else
+        # Caso não existam jogadores, adiciona o jogador diretamente na lista
+        sed -i '2i\    {\n        nick: "'"$nome"'", charLink: "'"$link"'", pontos: 1\n    }' "$RANK_FILE"
+    fi
+}
+
 
     # Chama a função para adicionar o jogador no rank.js
     adicionar_jogador_rank "$nome"

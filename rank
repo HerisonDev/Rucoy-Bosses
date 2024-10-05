@@ -118,7 +118,7 @@ function adicionar_jogador_rank() {
         sed -i '$d' "$RANK_FILE"
         
         # Adiciona o novo jogador no final da lista com uma vírgula, seguido pelo fechamento da array
-        echo "    { nick: \"$nome\", charLink: \"$link\", pontos: 1 }," >> "$RANK_FILE"
+        echo "    ,{\n        nick: \"$nome\", charLink: \"$link\", pontos: 1\n        }," >> "$RANK_FILE"
         echo "]" >> "$RANK_FILE"
     else
         # Caso não existam jogadores, adiciona o jogador diretamente na lista

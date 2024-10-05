@@ -263,7 +263,7 @@ while true; do
 
             # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
             sed -i '64s/Spawned/Boss Not Found/' $HTML
-            sed -i '69s/color: rgb(0, 255, 0);/color: red;/' $HTML
+            sed -i '64s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de North America 1 foi alterado"
 	    att-repo

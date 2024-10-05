@@ -262,14 +262,8 @@ while true; do
             echo "Você selecionou North America 1"
 
             # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
-            if [[ "$(sed '64q;d' $HTML)" =~ "Spawned" ]]; then
-            sed -i '64s/Spawned/Boss Dead/' $HTML
-            sed -i '64s/color: rgb(0, 255, 0);/color: orange;/' $HTML
-
-            elif [[ "$(sed '64q;d' $HTML)" =~ "Boss Dead" ]]; then
-            sed -i '64s/Boss Dead/Boss Not Found/' $HTML
-            sed -i '64s/color: orange;/color: red;/' $HTML
-            fi
+            sed -i '64s/Spawned/Boss Not Found/' $HTML
+            sed -i '69s/color: rgb(0, 255, 0);/color: red;/' $HTML
 
             echo "O status de North America 1 foi alterado"
 	    att-repo

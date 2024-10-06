@@ -5,11 +5,10 @@ HTML="/root/Rucoy-bosses/index.html"
 #Codigo referente a passar as informacoes por argumentos
 
 # Processando os argumentos de linha de comando
-while getopts ":nome:" opt; do
+while getopts ":n:" opt; do
   case $opt in
-    nome)
+    n)
       nome="$OPTARG"
-      echo "O nome é: $nome"
       ;;
   esac
 done

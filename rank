@@ -8,7 +8,7 @@ HTML="/root/Rucoy-bosses/index.html"
 while getopts ":n:" opt; do
   case $opt in
     n)
-      nome="$OPTARG"
+      nome=$OPTARG
       ;;
   esac
 done

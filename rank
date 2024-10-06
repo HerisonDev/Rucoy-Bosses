@@ -7,7 +7,7 @@ HTML="/root/Rucoy-bosses/index.html"
 # Processando os argumentos de linha de comando
 while getopts ":nome:" opt; do
   case $opt in
-    n)
+    nome)
       nome="$OPTARG"
       echo "O nome é: $nome"
       ;;

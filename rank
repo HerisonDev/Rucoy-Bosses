@@ -2,8 +2,20 @@
 
 HTML="/root/Rucoy-bosses/index.html"
 
+#Codigo referente a passar as informacoes por argumentos
+
+# Processando os argumentos de linha de comando
+while getopts ":nome:" opt; do
+  case $opt in
+    n)
+      nome="$OPTARG"
+      echo "O nome é: $nome"
+      ;;
+  esac
+done
+
 # Solicita que o usuário digite o nome do jogador
-read -p "Digite o nome do jogador: " nome
+#read -p "Digite o nome do jogador: " nome
 
 # Solicita o servidor
 #read -p "Digite o nome do servidor: " servidor

@@ -9,6 +9,7 @@ while getopts ":n:" opt; do
   case $opt in
     n)
       nome="$OPTARG"
+      echo $OPTARG > /root/teste.txt
       ;;
   esac
 done

@@ -8,8 +8,7 @@ HTML="/root/Rucoy-bosses/index.html"
 while getopts ":n:" opt; do
   case $opt in
     n)
-      nome="$OPTARG"
-      echo $OPTARG > /root/teste.txt
+      nome=$OPTARG
       ;;
   esac
 done

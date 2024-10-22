@@ -14,7 +14,10 @@ HTML="/root/Rucoy-bosses/index.html"
 # done
 
 # Solicita que o usuário digite o nome do jogador
-read -p "Digite o nome do jogador: " nome
+read -p "Digite o nome do jogador: " nomeF
+
+# Converte a primeira letra de cada palavra em maiúscula e o restante em minúsculas
+nome=$(echo "$nomeF" | awk '{ for (i=1; i<=NF; i++) $i = toupper(substr($i,1,1)) tolower(substr($i,2)) } 1')
 
 # Solicita o servidor
 #read -p "Digite o nome do servidor: " servidor

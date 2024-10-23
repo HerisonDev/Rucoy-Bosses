@@ -62,7 +62,7 @@ while true; do
     read -p "Opção: " option
 
     case $option in
-1) servidor="North America 1"; line=64;;
+        1) servidor="North America 1"; line=64;;
         2) servidor="North America 2"; line=69;;
         3) servidor="North America 3"; line=74;;
         4) servidor="North America 4"; line=78;;

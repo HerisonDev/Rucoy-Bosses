@@ -7,4 +7,5 @@ let jogadores = [
     ,{ nick: "Desbugoo", charLink: "https://www.rucoyonline.com/characters/Desbugoo", pontos: 1 },
     ,{ nick: "Agr Desbugou", charLink: "https://www.rucoyonline.com/characters/Agr%20Desbugou", pontos: 1 },
     ,{ nick: "Haaaa", charLink: "https://www.rucoyonline.com/characters/Haaaa", pontos: 2 },
+    ,{ nick: "Jriroroe", charLink: "https://www.rucoyonline.com/characters/Jriroroe", pontos: 1 },
 ]

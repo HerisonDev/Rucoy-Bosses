@@ -74,7 +74,7 @@ while true; do
         10) servidor="South America 4"; line=105;;
         11) servidor="South America 5"; line=109;;
         12) servidor="South America 6"; line=113;;
-        13) servidor="South America 7"; line=117;;z
+        13) servidor="South America 7"; line=117;;
         14) servidor="South America 8"; line=121;;
         15) servidor="Europe 1"; line=128;;
         16) servidor="Europe 2"; line=132;;
@@ -107,7 +107,7 @@ while true; do
     sed -i "${line}s/color: red;/color: rgb(0, 255, 0);/" $HTML
     echo "Servidor: $servidor | Boss: $boss atualizado com sucesso!"
     break
-done
+doner
 done
 
 

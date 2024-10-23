@@ -175,7 +175,7 @@ function adicionar_history() {
     local link="https://www.rucoyonline.com/characters/"$(echo "$nome" | sed 's/ /%20/g')
 
     # Adiciona sempre um novo registro no history.js, mesmo que o jogador já exista
-    sed -i '2i\    {\n        nick: "'"$nome"'", charLink: "'"$link"'", server: "'"$servidor"'", date: "'"$data"'"\n    },' "$HISTORY_FILE"
+    sed -i '2i\    {\n        nick: "'"$nome"'", charLink: "'"$link"'", server: "'"$servidor"'", date: "'"$data"'", boss: "'"$boss"'"\n    },' "$HISTORY_FILE"
     echo "Novo registro para '$nome' adicionado no history.js."
 }
 

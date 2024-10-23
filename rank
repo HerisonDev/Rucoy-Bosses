@@ -102,8 +102,19 @@ while true; do
         esac
     done
 
+    current_boss=$(sed -n "${line}p" $HTML | grep -oP '(La Calaca|Haunted Willow.*)')
+
+    # Se já houver um boss, adiciona o novo separado por "/"
+    if [[ $current_boss == *"$boss"* ]]; then
+        echo "O boss '$boss' já está registrado no servidor $servidor."
+    elif [[ -n $current_boss ]]; then
+        new_boss="$current_boss/$boss"
+        sed -i "${line}s/$current_boss/$new_boss/" $HTML
+    else
+        sed -i "${line}s/Boss Not Found/$boss/" $HTML
+    fi
+
     # Atualização do HTML com o servidor e o boss selecionados
-    sed -i "${line}s/Boss Not Found/${boss}/" $HTML
     sed -i "${line}s/color: red;/color: rgb(0, 255, 0);/" $HTML
     echo "Servidor: $servidor | Boss: $boss atualizado com sucesso!"
     break

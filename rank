@@ -107,7 +107,7 @@ while true; do
     sed -i "${line}s/color: red;/color: rgb(0, 255, 0);/" $HTML
     echo "Servidor: $servidor | Boss: $boss atualizado com sucesso!"
     break
-doner
+done
 done
 
 

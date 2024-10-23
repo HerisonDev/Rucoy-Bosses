@@ -103,12 +103,22 @@ while true; do
     done   
      
     linha=$(sed -n "${line}p" "$HTML")
-    if [[ "$linha" == *"La Calaca"* ]]; then
-        sed -i "${line}s/La Calaca/&\/${boss}/" $HTML
-    elif [[ "$linha" == *"Haunted Willow"* ]]; then
-        sed -i "${line}s/Haunted Willow/&\/${boss}/" $HTML
-    fi
+    # if [[ "$linha" == *"La Calaca"* ]]; then
+    #     sed -i "${line}s/La Calaca/&\/${boss}/" $HTML
+    # elif [[ "$linha" == *"Haunted Willow"* ]]; then
+    #     sed -i "${line}s/Haunted Willow/&\/${boss}/" $HTML
+    # fi
 
+    if [[ "$linha" == *"La Calaca"* && "$linha" == *"Haunted Willow"* ]]; then
+    # Se ambos os bosses já estão presentes, garanta a ordem correta
+        sed -i "${line}s/Haunted Willow\/La Calaca/La Calaca\/Haunted Willow/" $HTML
+    elif [[ "$linha" == *"La Calaca"* ]]; then
+    # Se já existe La Calaca, adicionar Haunted Willow corretamente
+        sed -i "${line}s/La Calaca/&\/Haunted Willow/" $HTML
+    elif [[ "$linha" == *"Haunted Willow"* ]]; then
+    # Se já existe Haunted Willow, adicionar La Calaca na frente
+        sed -i "${line}s/Haunted Willow/La Calaca\/&/" $HTML
+    fi
 
     # Atualização do HTML com o servidor e o boss selecionados
     sed -i "${line}s/Boss Not Found/${boss}/" $HTML

@@ -106,7 +106,7 @@ while true; do
     if [[ "$linha" == *"La Calaca"* ]]; then
         sed -i "${line}s/La Calaca/&\/${boss}/" $HTML
     elif [[ "$linha" == *"Haunted Willow"* ]]; then
-        sed -i "${line}s/La Calaca/&\/${boss}/" $HTML
+        sed -i "${line}s/Haunted Willow/&\/${boss}/" $HTML
     fi
 
 

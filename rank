@@ -100,7 +100,15 @@ while true; do
             2) boss="Haunted Willow"; break;;
             *) echo "Opção inválida. Por favor, tente novamente.";;
         esac
-    done
+    done    
+    linha=$(sed -n ${line} $HTML)  # Extrai a linha 5 do arquivo
+
+    if [[ "$linha" == *"$boss"* ]]; then
+        echo "A palavra '$palavra' foi encontrada na linha 5."
+    else
+        echo "A palavra '$palavra' NÃO foi encontrada na linha 5."
+    fi
+
 
     # Atualização do HTML com o servidor e o boss selecionados
     sed -i "${line}s/Boss Not Found/${boss}/" $HTML

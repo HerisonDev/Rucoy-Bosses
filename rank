@@ -116,7 +116,6 @@ while true; do
     echo "Servidor: $servidor | Boss: $boss atualizado com sucesso!"
     break
 done
-done
 
 
 # Variável para o arquivo rank.js

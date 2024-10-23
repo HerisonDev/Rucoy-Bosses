@@ -62,32 +62,52 @@ while true; do
     read -p "Opção: " option
 
     case $option in
-        1) servidor="North America 1"; sed -i '64s/Boss Not Found/Spawned/' $HTML; sed -i '64s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        2) servidor="North America 2"; sed -i '69s/Boss Not Found/Spawned/' $HTML; sed -i '69s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        3) servidor="North America 3"; sed -i '74s/Boss Not Found/Spawned/' $HTML; sed -i '74s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        4) servidor="North America 4"; sed -i '78s/Boss Not Found/Spawned/' $HTML; sed -i '78s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        5) servidor="North America 5"; sed -i '82s/Boss Not Found/Spawned/' $HTML; sed -i '82s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        6) servidor="North America 6"; sed -i '86s/Boss Not Found/Spawned/' $HTML; sed -i '86s/color: red;/color: rgb(0, 255, 0);/' $HTML ; break;;
-        7) servidor="South America 1"; sed -i '93s/Boss Not Found/Spawned/' $HTML; sed -i '93s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        8) servidor="South America 2"; sed -i '97s/Boss Not Found/Spawned/' $HTML; sed -i '97s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        9) servidor="South America 3"; sed -i '101s/Boss Not Found/Spawned/' $HTML; sed -i '101s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        10) servidor="South America 4"; sed -i '105s/Boss Not Found/Spawned/' $HTML; sed -i '105s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        11) servidor="South America 5"; sed -i '109s/Boss Not Found/Spawned/' $HTML; sed -i '109s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        12) servidor="South America 6"; sed -i '113s/Boss Not Found/Spawned/' $HTML; sed -i '113s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        13) servidor="South America 7"; sed -i '117s/Boss Not Found/Spawned/' $HTML; sed -i '117s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        14) servidor="South America 8"; sed -i '121s/Boss Not Found/Spawned/' $HTML; sed -i '121s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        15) servidor="Europe 1"; sed -i '128s/Boss Not Found/Spawned/' $HTML; sed -i '128s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        16) servidor="Europe 2"; sed -i '132s/Boss Not Found/Spawned/' $HTML; sed -i '132s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        17) servidor="Europe 3"; sed -i '136s/Boss Not Found/Spawned/' $HTML; sed -i '136s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        18) servidor="Europe 4"; sed -i '140s/Boss Not Found/Spawned/' $HTML; sed -i '140s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        19) servidor="Europe 5"; sed -i '144s/Boss Not Found/Spawned/' $HTML; sed -i '144s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        20) servidor="Europe 6"; sed -i '148s/Boss Not Found/Spawned/' $HTML; sed -i '148s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        21) servidor="Asia 1"; sed -i '155s/Boss Not Found/Spawned/' $HTML; sed -i '155s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        22) servidor="Asia 2"; sed -i '159s/Boss Not Found/Spawned/' $HTML; sed -i '159s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        23) servidor="Asia 3"; sed -i '163s/Boss Not Found/Spawned/' $HTML; sed -i '163s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
-        24) servidor="Asia 4"; sed -i '167s/Boss Not Found/Spawned/' $HTML; sed -i '167s/color: red;/color: rgb(0, 255, 0);/' $HTML; break;;
+1) servidor="North America 1"; line=64;;
+        2) servidor="North America 2"; line=69;;
+        3) servidor="North America 3"; line=74;;
+        4) servidor="North America 4"; line=78;;
+        5) servidor="North America 5"; line=82;;
+        6) servidor="North America 6"; line=86;;
+        7) servidor="South America 1"; line=93;;
+        8) servidor="South America 2"; line=97;;
+        9) servidor="South America 3"; line=101;;
+        10) servidor="South America 4"; line=105;;
+        11) servidor="South America 5"; line=109;;
+        12) servidor="South America 6"; line=113;;
+        13) servidor="South America 7"; line=117;;z
+        14) servidor="South America 8"; line=121;;
+        15) servidor="Europe 1"; line=128;;
+        16) servidor="Europe 2"; line=132;;
+        17) servidor="Europe 3"; line=136;;
+        18) servidor="Europe 4"; line=140;;
+        19) servidor="Europe 5"; line=144;;
+        20) servidor="Europe 6"; line=148;;
+        21) servidor="Asia 1"; line=155;;
+        22) servidor="Asia 2"; line=159;;
+        23) servidor="Asia 3"; line=163;;
+        24) servidor="Asia 4"; line=167;;
         *) echo "Opção inválida. Por favor, tente novamente."; continue;;
     esac
+
+    while true; do
+        echo "Por favor, selecione o boss:"
+        echo "1) La Calaca"
+        echo "2) Haunted Willow"
+        read -p "Opção: " boss_option
+
+        case $boss_option in
+            1) boss="La Calaca"; break;;
+            2) boss="Haunted Willow"; break;;
+            *) echo "Opção inválida. Por favor, tente novamente.";;
+        esac
+    done
+
+    # Atualização do HTML com o servidor e o boss selecionados
+    sed -i "${line}s/Boss Not Found/${boss}/" $HTML
+    sed -i "${line}s/color: red;/color: rgb(0, 255, 0);/" $HTML
+    echo "Servidor: $servidor | Boss: $boss atualizado com sucesso!"
+    break
+done
 done
 
 

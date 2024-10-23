@@ -1,15 +1,6 @@
 #!/bin/bash
 
 HTML="/root/Rucoy-bosses/index.html"
-STATUS="$(
-    if [[ $(sed '64q;d' "$HTML") == *"Spawned"* ]]; then
-        echo -e '\033[0;32mSpawned\033[0m'
-    elif [[ $(sed '64q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
-    elif [[ $(sed '64q;d' "$HTML") == *"Boss Not Found"* ]]; then
-        echo -e '\033[0;31mBoss Not Found\033[0m'
-    fi
-)"
 
 function att-repo(){
     cd $HOME/Rucoy-bosses/

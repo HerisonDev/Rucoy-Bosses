@@ -20,17 +20,17 @@ while true; do
     echo " 1) North America 1 '$(
     if [[ $(sed '64q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '64q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
-    elif [[ $(sed '64q;d' "$HTML") == *"Boss Not Found"* ]]; then
-        echo -e '\033[0;31mBoss Not Found\033[0m'
+    elif [[ $(sed '64q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[0;32mHaunted Willow\033[0m'
+    if [[ $(sed '64q;d' "$HTML") == *"La Calaca"* ]]; then
+        echo -e '\033[0;32mLa Calaca\033[0m'
     fi
 )'"
     echo " 2) North America 2 '$(
     if [[ $(sed '69q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '69q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '69q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '69q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -38,8 +38,8 @@ while true; do
     echo " 3) North America 3 '$(
     if [[ $(sed '74q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '74q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '74q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '74q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -47,8 +47,8 @@ while true; do
     echo " 4) North America 4 '$(
     if [[ $(sed '78q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '78q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '78q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '78q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -56,8 +56,8 @@ while true; do
     echo " 5) North America 5 '$(
     if [[ $(sed '82q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '82q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '82q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '82q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -65,8 +65,8 @@ while true; do
     echo " 6) North America 6 '$(
     if [[ $(sed '86q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '86q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '86q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '86q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -77,8 +77,8 @@ while true; do
     echo " 7) South America 1 '$(
     if [[ $(sed '93q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '93q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '93q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '93q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -86,8 +86,8 @@ while true; do
     echo " 8) South America 2 '$(
     if [[ $(sed '97q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '97q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '97q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '97q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -95,8 +95,8 @@ while true; do
     echo " 9) South America 3 '$(
     if [[ $(sed '101q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '101q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '101q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '101q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -104,8 +104,8 @@ while true; do
     echo "10) South America 4 '$(
     if [[ $(sed '105q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '105q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '105q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '105q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -113,8 +113,8 @@ while true; do
     echo "11) South America 5 '$(
     if [[ $(sed '109q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '109q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '109q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '109q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -122,8 +122,8 @@ while true; do
     echo "12) South America 6 '$(
     if [[ $(sed '113q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '113q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '113q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '113q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -131,8 +131,8 @@ while true; do
     echo "13) South America 7 '$(
     if [[ $(sed '117q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '117q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '117q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '117q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -140,8 +140,8 @@ while true; do
     echo "14) South America 8 '$(
     if [[ $(sed '121q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '121q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '121q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '121q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -152,8 +152,8 @@ while true; do
     echo "15) Europe 1 '$(
     if [[ $(sed '128q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '128q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '128q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '128q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -161,8 +161,8 @@ while true; do
     echo "16) Europe 2 '$(
     if [[ $(sed '132q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '132q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '132q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '132q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -170,8 +170,8 @@ while true; do
     echo "17) Europe 3 '$(
     if [[ $(sed '136q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '136q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '136q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '136q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -179,8 +179,8 @@ while true; do
     echo "18) Europe 4 '$(
     if [[ $(sed '140q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '140q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '140q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '140q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -188,8 +188,8 @@ while true; do
     echo "19) Europe 5 '$(
     if [[ $(sed '144q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '144q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '144q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '144q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -197,8 +197,8 @@ while true; do
     echo "20) Europe 6 '$(
     if [[ $(sed '148q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '148q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '148q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '148q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -209,8 +209,8 @@ while true; do
     echo "21) Asia 1 '$(
     if [[ $(sed '155q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '155q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '155q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '155q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -218,8 +218,8 @@ while true; do
     echo "22) Asia 2 '$(
     if [[ $(sed '159q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '159q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '159q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '159q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -227,8 +227,8 @@ while true; do
     echo "23) Asia 3 '$(
     if [[ $(sed '163q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '163q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '163q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '163q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
@@ -236,8 +236,8 @@ while true; do
     echo "24) Asia 4 '$(
     if [[ $(sed '167q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
-    elif [[ $(sed '167q;d' "$HTML") == *"Boss Dead"* ]]; then
-        echo -e '\033[38;5;208mBoss Dead\033[0m'
+    elif [[ $(sed '167q;d' "$HTML") == *"Haunted Willow"* ]]; then
+        echo -e '\033[38;5;208mHaunted Willow\033[0m'
     elif [[ $(sed '167q;d' "$HTML") == *"Boss Not Found"* ]]; then
         echo -e '\033[0;31mBoss Not Found\033[0m'
     fi

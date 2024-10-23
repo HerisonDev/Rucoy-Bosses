@@ -22,7 +22,7 @@ while true; do
         echo -e '\033[0;32mLa Calaca\033[0m'
     elif [[ $(sed '64q;d' "$HTML") == *"Haunted Willow"* ]]; then
         echo -e '\033[0;32mHaunted Willow\033[0m'
-    if [[ $(sed '64q;d' "$HTML") == *"La Calaca"* ]]; then
+    elif [[ $(sed '64q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
     fi
 )'"
@@ -496,6 +496,6 @@ while true; do
         *)
            
             echo "Opção inválida. Por favor, tente novamente."
-            break;;
+            ;;
     esac
 done

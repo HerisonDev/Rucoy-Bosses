@@ -493,8 +493,9 @@ while true; do
 	    cd $HOME/Rucoy-bosses/
 	    . rank
 	    break;;
-        *)
-            echo "Opção inválida. Por favor, tente novamente."
-            ;;
+    *)
+           
+        echo "Opção inválida. Por favor, tente novamente."
+        ;;
     esac
 done

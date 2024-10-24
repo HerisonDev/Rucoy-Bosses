@@ -1,18 +1,3 @@
 let found = [
-    {
-        nick: "Wgh", charLink: "https://www.rucoyonline.com/characters/Wgh", server: "North America 1", date: "24 Oct 01:16:38", boss: "Haunted Willow"
-    },
-    {
-        nick: "Bfit", charLink: "https://www.rucoyonline.com/characters/Bfit", server: "North America 1", date: "24 Oct 01:15:54", boss: "La Calaca"
-    },
-    {
-        nick: "Bririr", charLink: "https://www.rucoyonline.com/characters/Bririr", server: "Asia 1", date: "23 Oct 19:00:46", boss: "Haunted Willow"
-    },
-    {
-        nick: "Vsoeo", charLink: "https://www.rucoyonline.com/characters/Vsoeo", server: "Asia 1", date: "23 Oct 18:59:40", boss: "La Calaca"
-    },
-    {
-        nick: "Bestial Titan", charLink: "https://www.rucoyonline.com/characters/Bestial%20Titan", server: "Europe 3", date: "23 Oct 18:18:49", boss: "Haunted Willow"
-    },
-            
+                
 ];

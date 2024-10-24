@@ -24,7 +24,8 @@ while true; do
         echo -e '\033[0;32mLa Calaca\033[0m'
     elif [[ $(sed '64q;d' "$HTML") == *"Haunted Willow"* ]]; then
         echo -e '\033[0;32mHaunted Willow\033[0m'
-
+    elif [[ $(sed '64q;d' "$HTML") == *"Boss Not Found"* ]]; then
+        echo -e '\033[0;31mBoss Not Found\033[0m'
     fi
 )'"
     echo " 2) North America 2 '$(

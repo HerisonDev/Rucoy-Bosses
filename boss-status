@@ -18,12 +18,13 @@ while true; do
     echo "América do Norte:"
 
     echo " 1) North America 1 '$(
-    if [[ $(sed '64q;d' "$HTML") == *"La Calaca"* ]]; then
+    if [[ $(sed '64q;d' "$HTML") == *"La Calaca/Haunted Willow"* ]]; then
+        echo -e '\033[0;32mLa Calaca/Haunted Willow\033[0m'
+    elif [[ $(sed '64q;d' "$HTML") == *"La Calaca"* ]]; then
         echo -e '\033[0;32mLa Calaca\033[0m'
     elif [[ $(sed '64q;d' "$HTML") == *"Haunted Willow"* ]]; then
         echo -e '\033[0;32mHaunted Willow\033[0m'
-    elif [[ $(sed '64q;d' "$HTML") == *"La Calaca"* && $(sed '64q;d' "$HTML") == *"La Calaca/Haunted Willow"* ]]; then
-        echo -e '\033[0;32mLa Calaca/Haunted Willow\033[0m'
+
     fi
 )'"
     echo " 2) North America 2 '$(

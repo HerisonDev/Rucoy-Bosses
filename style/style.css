@@ -86,9 +86,9 @@ a:visited {
     color: #ffffff;
 }
 
-.h2-history::after {
+/* .h2-history::after {
     content: " >";
-}
+} */
 
 .h2-rank::after {
     content: " >";

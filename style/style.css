@@ -91,7 +91,7 @@ a:visited {
 }
 
 .h2-rank::after {
-    content: " >";
+    content: " <a href='https://google.com'>see all > </a>";
 }
 
 .float-menu {

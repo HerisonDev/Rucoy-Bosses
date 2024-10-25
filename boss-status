@@ -307,17 +307,17 @@ while true; do
             echo "2) Haunted Willow"
             read -p "Selecione uma opção (1 ou 2): " boss_option
 
-            if [[ $boss_option -eq 1 ]]; then
-                # Remover La Calaca e manter Haunted Willow
-                sed -i '64s/La Calaca\/Haunted Willow/Haunted Willow/' $HTML
-                echo "La Calaca foi removido."
-            elif [[ $boss_option -eq 2 ]]; then
-                # Remover Haunted Willow e manter La Calaca
-                sed -i '64s/La Calaca\/Haunted Willow/La Calaca/' $HTML
-                echo "Haunted Willow foi removido."
-            else
-                echo "Opção inválida."
-            fi
+                if [[ $boss_option -eq 1 ]]; then
+                    # Remover La Calaca e manter Haunted Willow
+                    sed -i '64s/La Calaca\/Haunted Willow/Haunted Willow/' $HTML
+                    echo "La Calaca foi removido."
+                elif [[ $boss_option -eq 2 ]]; then
+                    # Remover Haunted Willow e manter La Calaca
+                    sed -i '64s/La Calaca\/Haunted Willow/La Calaca/' $HTML
+                    echo "Haunted Willow foi removido."
+                else
+                    echo "Opção inválida."
+                fi
             else
             # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
             sed -i '64s/Spawned/Boss Not Found/' $HTML

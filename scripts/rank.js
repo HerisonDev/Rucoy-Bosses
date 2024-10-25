@@ -12,4 +12,5 @@ let jogadores = [
     ,{ nick: "Jfjfi", charLink: "https://www.rucoyonline.com/characters/Jfjfi", pontos: 1 },
     ,{ nick: "Wjwjw", charLink: "https://www.rucoyonline.com/characters/Wjwjw", pontos: 1 },
     ,{ nick: "Ekeie", charLink: "https://www.rucoyonline.com/characters/Ekeie", pontos: 1 },
+    ,{ nick: "Otario", charLink: "https://www.rucoyonline.com/characters/Otario", pontos: 1 },
 ]

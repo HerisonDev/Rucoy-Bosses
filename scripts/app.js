@@ -20,7 +20,7 @@ function ordenarPorPontos(a, b) {
 
 // Função para obter os 5 melhores jogadores
 function getTop5(jogadores) {
-  return jogadores.sort(ordenarPorPontos).slice(0, 10);
+  return jogadores.sort(ordenarPorPontos).slice(0, 5);
 }
 
 // Exemplo de uso:

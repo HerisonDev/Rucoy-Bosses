@@ -1,5 +1,8 @@
 let found = [
     {
+        nick: "Jfjfi", charLink: "https://www.rucoyonline.com/characters/Jfjfi", server: "North America 1", date: "25 Oct 02:19:51", boss: "Haunted Willow"
+    },
+    {
         nick: "Jtjr", charLink: "https://www.rucoyonline.com/characters/Jtjr", server: "North America 1", date: "25 Oct 02:17:19", boss: "Haunted Willow"
     },
     {

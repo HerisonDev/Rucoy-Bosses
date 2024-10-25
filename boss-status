@@ -393,21 +393,61 @@ while true; do
         4)
             echo "Você selecionou North America 4"
 
-	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
-            sed -i '78s/Spawned/Boss Not Found/' $HTML
-            sed -i '78s/color: rgb(0, 255, 0);/color: red;/' $HTML
+            if [[ $(sed '78q;d' "$HTML") == *"La Calaca/Haunted Willow"* ]]; then
+            echo "Ambos os bosses estão presentes. Qual você deseja remover?"
+            echo "1) La Calaca"
+            echo "2) Haunted Willow"
+            read -p "Selecione uma opção (1 ou 2): " boss_option
 
-            echo "O status de North America 4 foi alterado para 'Boss Not Found' e a cor para red."
+                if [[ $boss_option -eq 1 ]]; then
+                    # Remover La Calaca e manter Haunted Willow
+                    sed -i '78s/La Calaca\/Haunted Willow/Haunted Willow/' $HTML
+                    echo "La Calaca foi removido."
+                elif [[ $boss_option -eq 2 ]]; then
+                    # Remover Haunted Willow e manter La Calaca
+                    sed -i '78s/La Calaca\/Haunted Willow/La Calaca/' $HTML
+                    echo "Haunted Willow foi removido."
+                else
+                    echo "Opção inválida."
+                fi
+            elif [[ $(sed '78q;d' "$HTML") == *"La Calaca"* ]]; then
+                sed -i '78s/La Calaca/Boss Not Found/' $HTML
+                sed -i '78s/color: rgb(0, 255, 0);/color: red;/' $HTML
+                echo "O status de North America 1 foi alterado"
+            elif [[ $(sed '78q;d' "$HTML") == *"Haunted Willow"* ]]; then
+                sed -i '78s/Haunted Willow/Boss Not Found/' $HTML
+                sed -i '78s/color: rgb(0, 255, 0);/color: red;/' $HTML
+            fi
 	        att-repo
             break;;
         5)
             echo "Você selecionou North America 5"
 
-	    # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
-            sed -i '64s/Spawned/Boss Not Found/' $HTML
-            sed -i '64s/color: rgb(0, 255, 0);/color: red;/' $HTML
+            if [[ $(sed '82q;d' "$HTML") == *"La Calaca/Haunted Willow"* ]]; then
+            echo "Ambos os bosses estão presentes. Qual você deseja remover?"
+            echo "1) La Calaca"
+            echo "2) Haunted Willow"
+            read -p "Selecione uma opção (1 ou 2): " boss_option
 
-            echo "O status de North America 5 foi alterado para 'Boss Not Found' e a cor para red."
+                if [[ $boss_option -eq 1 ]]; then
+                    # Remover La Calaca e manter Haunted Willow
+                    sed -i '82s/La Calaca\/Haunted Willow/Haunted Willow/' $HTML
+                    echo "La Calaca foi removido."
+                elif [[ $boss_option -eq 2 ]]; then
+                    # Remover Haunted Willow e manter La Calaca
+                    sed -i '82s/La Calaca\/Haunted Willow/La Calaca/' $HTML
+                    echo "Haunted Willow foi removido."
+                else
+                    echo "Opção inválida."
+                fi
+            elif [[ $(sed '82q;d' "$HTML") == *"La Calaca"* ]]; then
+                sed -i '82s/La Calaca/Boss Not Found/' $HTML
+                sed -i '82s/color: rgb(0, 255, 0);/color: red;/' $HTML
+                echo "O status de North America 1 foi alterado"
+            elif [[ $(sed '82q;d' "$HTML") == *"Haunted Willow"* ]]; then
+                sed -i '82s/Haunted Willow/Boss Not Found/' $HTML
+                sed -i '82s/color: rgb(0, 255, 0);/color: red;/' $HTML
+            fi
 	        att-repo
             break;;
         6)

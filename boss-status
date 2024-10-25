@@ -318,11 +318,13 @@ while true; do
                 else
                     echo "Opção inválida."
                 fi
-            else
-            # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
-            sed -i '64s/Spawned/Boss Not Found/' $HTML
-            sed -i '64s/color: rgb(0, 255, 0);/color: red;/' $HTML
-            echo "O status de North America 1 foi alterado"
+            elif [[ $(sed '64q;d' "$HTML") == *"La Calaca"* ]]; then
+                sed -i '64s/La Calaca/Boss Not Found/' $HTML
+                sed -i '64s/color: rgb(0, 255, 0);/color: red;/' $HTML
+                echo "O status de North America 1 foi alterado"
+            elif [[ $(sed '64q;d' "$HTML") == *"Haunted Willow"* ]]; then
+                sed -i '64s/Haunted Willow/Boss Not Found/' $HTML
+                sed -i '64s/color: rgb(0, 255, 0);/color: red;/' $HTML
             fi
         
             att-repo

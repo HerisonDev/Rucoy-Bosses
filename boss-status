@@ -298,14 +298,34 @@ while true; do
 
     case $option in
         1)
-            echo "Você selecionou North America 1"
+        echo "Você selecionou North America 1"
 
+        # Verifica se ambos os bosses estão presentes
+            if [[ $(sed '64q;d' "$HTML") == *"La Calaca/Haunted Willow"* ]]; then
+            echo "Ambos os bosses estão presentes. Qual você deseja remover?"
+            echo "1) La Calaca"
+            echo "2) Haunted Willow"
+            read -p "Selecione uma opção (1 ou 2): " boss_option
+
+            if [[ $boss_option -eq 1 ]]; then
+                # Remover La Calaca e manter Haunted Willow
+                sed -i '64s/La Calaca\/Haunted Willow/Haunted Willow/' $HTML
+                echo "La Calaca foi removido."
+            elif [[ $boss_option -eq 2 ]]; then
+                # Remover Haunted Willow e manter La Calaca
+                sed -i '64s/La Calaca\/Haunted Willow/La Calaca/' $HTML
+                echo "Haunted Willow foi removido."
+            else
+                echo "Opção inválida."
+            fi
+            else
             # Alterando o status de "Boss Not Found" para "Spawned" e mudando a cor para verde
             sed -i '64s/Spawned/Boss Not Found/' $HTML
             sed -i '64s/color: rgb(0, 255, 0);/color: red;/' $HTML
-
             echo "O status de North America 1 foi alterado"
-	        att-repo
+            fi
+        
+            att-repo
             break;;
         2)
             echo "Você selecionou North America 2"

@@ -1,6 +1,6 @@
 let jogadores = [
     {
-        nick: "System", charLink: "https://www.rucoyonline.com/characters/System", pontos: 10
+        nick: "System", charLink: "https://www.rucoyonline.com/characters/System", pontos: 11
     }
     
 ]

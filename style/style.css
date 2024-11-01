@@ -21,14 +21,27 @@ body {
     align-items: center;
     width: 70%;
     height: 10vh;
-
-
 }
 
 .hidden {
     visibility: hidden;
 }
 
+.popup {
+    position: fixed;
+    left: 40%;
+    top: 20vh;
+    background-color: #AAAAAA;
+    width: 20%;
+}
+
+.h2popup {
+    margin: 0 auto;
+}
+
+.popup img{
+    width: 100%;
+}
 
 .menu-button {
     display: flex;
@@ -267,6 +280,19 @@ table td {
         border-radius: 1.3rem;
         width: 100%;
     }
+
+    .popup {
+        position: fixed;
+        left: 20%;
+        top: 20vh;
+        background-color: #AAAAAA;
+        width: 60%;
+    }
+
+    .popup img {
+        width: 100%;
+    }
+    
 
     .table-rank {
         text-align: left;

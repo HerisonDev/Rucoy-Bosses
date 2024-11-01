@@ -1,4 +1,5 @@
 const menuButton = document.getElementById('menu-button');
+const popup = document.getElementById('popup')
 const floatMenu = document.getElementById('float-menu');
 
 const sectionHistory = document.getElementById('sec-history');
@@ -12,6 +13,11 @@ menuButton.addEventListener('click', () => {
   // Toggle a classe 'hidden' para mostrar ou ocultar o menu
   floatMenu.classList.toggle('hidden');
 });
+
+
+function hidePopup(){
+  popup.classList.toggle('hidden')
+}
 
 // Função para ordenar os jogadores por pontos (descendente)
 function ordenarPorPontos(a, b) {

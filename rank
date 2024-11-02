@@ -135,7 +135,7 @@ RANK_FILE="$HOME/Rucoy-bosses/scripts/rank.js"
 HISTORY_FILE="$HOME/Rucoy-bosses/scripts/history.js"
 
 # Captura a data e hora atuais no formato desejado
-data_atual=$(date +"%d %b %H:%M:%S")
+data_atual=$(TZ='America/Sao_Paulo' date +"%d %b %H:%M:%S")
 
 # Verifica se o nome do jogador já está presente no arquivo rank.js
 if grep -q "nick: \"$nome\"" "$RANK_FILE"; then

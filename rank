@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HTML="/root/Rucoy-bosses/index.html"
+HTML="/root/Rucoy-Bosses/index.html"
 
 #Codigo referente a passar as informacoes por argumentos
 

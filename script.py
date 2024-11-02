@@ -17,7 +17,7 @@ response = client.chat.completions.create(
     messages=[{
         "role": "user",
         "content": [
-            {"type": "text", "text": "Analise a imagem e me retorne apenas a mensagem em roxo,que tem uma fonte baseada em 8-bits,porem eu quero que voce pegue apenas a mensagem que nao possui caracteres especiais como '!',':' e numeros,e se tiver mais de uma mensagem roxa,analise bem as mensagens e retorne apenas a mensagem que contem a descricao passada,e eu quero que voce retorne apenas uma mensagem roxa,pois se voce analisar na imagem,cada mensagem fica embaixo da outra,entao retorne apenas uma,e por ultimo,eu quero que voce seja direto na resposta,apenas retornando a mensagem roxa.E se voce analisar a imagem e nao encontrar nenhuma mensagem roxa que tenha essas caracteristicas,retorne a mensagem 'not found'."},
+            {"type": "text", "text": "Me retorne o texto roxo,que tem as palavras 'found',qie tem colchetes,e que não possue dois pontos antes da palavra 'found',e se atente no que esta escrito dentro dos colchetes,pois é o servidor,é nescessario que ele esteja correto,e uma regra que esse texto em roxo tem é antes da palavra 'found',oque vier nao pode conter caractere especial como exclamacao ou colchetes e nem numeros,apenas letras,obrigado"},
             {"type": "image_url", "image_url": {"url": url_da_imagem}}
         ]
     }]

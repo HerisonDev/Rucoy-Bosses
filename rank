@@ -129,10 +129,10 @@ done
 
 
 # Variável para o arquivo rank.js
-RANK_FILE="$HOME/Rucoy-bosses/scripts/rank.js"
+RANK_FILE="$HOME/Rucoy-Bosses/scripts/rank.js"
 
 # Variável para o arquivo history.js
-HISTORY_FILE="$HOME/Rucoy-bosses/scripts/history.js"
+HISTORY_FILE="$HOME/Rucoy-Bosses/scripts/history.js"
 
 # Captura a data e hora atuais no formato desejado
 data_atual=$(TZ='America/Sao_Paulo' date +"%d %b %H:%M:%S")
@@ -200,7 +200,7 @@ function adicionar_history() {
 adicionar_history "$nome" "$servidor" "$data_atual"
 
 # Commit das mudanças no Git
-cd $HOME/Rucoy-bosses/
+cd $HOME/Rucoy-Bosses/
 git add .
 git commit -m "update rank.js and history.js"
 git push origin main

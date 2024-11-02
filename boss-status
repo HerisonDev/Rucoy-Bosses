@@ -3,7 +3,7 @@
 HTML="/root/Rucoy-Bosses/index.html"
 
 function att-repo(){
-    cd $HOME/Rucoy-bosses/
+    cd $HOME/Rucoy-Bosses/
     git add .
     git commit -m "update index.html boss status"
     git push origin main
